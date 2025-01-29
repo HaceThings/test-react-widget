@@ -22,5 +22,5 @@ const mountChatWidget = () => {
 }
 
 window.onload = function () {
-    window.mountChatWidget();
+    mountChatWidget();
 }
