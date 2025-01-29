@@ -16,7 +16,7 @@ const mountChatWidget = () => {
     blob.loading = "lazy";
     blob.src = "https://emojis.slackmojis.com/emojis/images/1643514770/7808/party-blob.gif?1643514770";
     chatDiv.appendChild(blob);
-    const documentBlob = document.body.getElementsByClassName("blob");
+    const documentBlob = document.getElementById("blob");
     documentBlob.appendChild(chatDiv);
     console.log("Appended child to body");
 }
