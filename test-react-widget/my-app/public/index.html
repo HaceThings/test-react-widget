@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<script src="https://cdn.jsdelivr.net/gh/HaceThings/test-react-widget@main/test-react-widget/my-app/src/index.js"></script>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -24,20 +25,69 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Job Board</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .job-listing {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .job-listing:last-child {
+            border-bottom: none;
+        }
+        .job-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .company-name {
+            color: #666;
+        }
+        .apply-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div class="container">
+      <h1>Job Board</h1>
+      <div class="job-listing">
+          <div class="job-title">Software Engineer</div>
+          <div class="company-name">TechCorp</div>
+          <p>We are looking for a skilled Software Engineer with experience in JavaScript and Python.</p>
+          <a href="#" class="apply-btn">Apply Now</a>
+      </div>
+      <div class="job-listing">
+          <div class="job-title">Product Manager</div>
+          <div class="company-name">Innovate Inc.</div>
+          <p>Seeking a dynamic Product Manager to lead our agile teams.</p>
+          <a href="#" class="apply-btn">Apply Now</a>
+      </div>
+      <div class="job-listing">
+          <div class="job-title">UX Designer</div>
+          <div class="company-name">Creative Studios</div>
+          <p>Join our team as a UX Designer and craft seamless user experiences.</p>
+          <a href="#" class="apply-btn">Apply Now</a>
+      </div>
+  </div>
   </body>
 </html>
