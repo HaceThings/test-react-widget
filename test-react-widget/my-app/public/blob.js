@@ -21,4 +21,6 @@ const mountChatWidget = () => {
     console.log("Appended child to body");
 }
 
-window.mountChatWidget = mountChatWidget;
+window.onload = function () {
+    window.mountChatWidget();
+}
